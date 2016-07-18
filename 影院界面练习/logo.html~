@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Movie_store A Entertainment Category Flat Bootstarp Resposive Website Template | Single :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Movie_store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- start plugins -->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<style type="text/css">
+	.col-sm-3 img{
+		width: 100px;
+	}
+	.ulul a{
+		margin-top: 15px;
+		color: #333;
+		padding: 10px 20px;
+	}
+	.ulul a:hover{
+		color: red;
+	}
+body{
+	overflow: hidden;
+}
+.footer_right{
+	overflow: hidden;
+	position: relative;
+	margin-top: 70px;
+	left: 230px;
+}
+.footer_right input{
+	border: none;
+	background-color: #ededee;
+	width: 255px;
+	height: 40px;
+	margin: 6px 8px;
+	border-radius: 5px;
+	padding-left: 55px;
+}
+.footer_right textarea{
+	background-color: #ededee;
+	border: none;
+	border-radius: 5px;
+	margin-left: 40px;
+	padding:10px;
+	width: 560px;
+}
+.footer_right textarea:hover{
+	box-shadow: 1px 1px 3px #E74F4D;
+}
+.footer_right span{
+	position: relative;
+	left: 57px;
+}
+#submit{
+	width: 560px;
+	margin-left: 40px;
+	padding-right: 60px;
+}
+.footer_right input:hover{
+	box-shadow: 1px 1px 3px #E74F4D;
+}
+
+@media screen and (max-width : 1280px){
+.footer_right{
+	overflow: hidden;
+	position: relative;
+	margin-top: 70px;
+	left: 150px;
+}
+	}
+</style>
+<script language="javascript"> 
+
+function logout(){ 
+alert("您已注册成功！"); 
+window.location.href="index.html?act=index"
+} 
+
+</script>
+
+</head>
+<body>
+<div class="container">
+	<div class="container_wrap">
+		<div class="header_top">
+		     <div class="col-sm-3 logo"><a href="index.html"><img src="images/1.png" alt=""/></a></div>
+        <div class="col-sm-6 nav">
+        <ul class="ulul">
+         <a href="#"><li>首页</li></a>
+         <a href="#"><li>影片</li></a>
+         <a href="#"><li>信息</li></a>
+         <a href="#"><li>订单</li></a>
+       </ul>
+      </div>
+      <div class="col-sm-3 header_right">
+         <ul class="header_right_box">
+         <li><img src="images/1.png" alt=""/></li>
+         </ul>
+      </div>
+	  <div class="footer_right">
+			<form method="post" action="" name="joinForm">
+				<label><span>姓名:</span><input type="text" name="name" placeholder="请输入您的姓名"/></label>
+				<label><span>年龄:</span><input type="text" name="age" placeholder="请输入您的年龄"/></label><br/>
+				<label><span>手机:</span><input type="text" name="number" placeholder="请输入您的手机号码"/></label>
+				<label><span>密码:</span><input type="text" name="dress" placeholder="请输入您的密码"/></label><br/>
+				<textarea cols="8" rows="8" placeholder="请简单填写你的备注信息"></textarea><br/>
+				<input id="submit" type="button" value="提交申请"  onclick="logout()"/>
+			</form>
+		</div>		
+   	  </div>
+	</div>
+</div>
+</body>
+</html>

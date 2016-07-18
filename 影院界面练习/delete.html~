@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Movie_store A Entertainment Category Flat Bootstarp Resposive Website Template | Single :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Movie_store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- start plugins -->
+<script type="text/javascript" src="jquery-2.2.2.min.js"></script>
+<style type="text/css">
+	.col-sm-3 img{
+		width: 100px;
+	}
+	.ulul a{
+		margin-top: 15px;
+		color: #333;
+		padding: 10px 20px;
+	}
+	.ulul a:hover{
+		color: red;
+	}
+	#flexiselDemo3 img{
+		width: 100%;
+		height: 300px;
+	}
+	#flexiselDemo1 img{
+		width: 100%;
+		height: 300px;
+	}
+	.delete:hover{
+		color: red;
+	}
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="container_wrap">
+		<div class="header_top">
+		     <div class="col-sm-3 logo"><a href="index.html"><img src="images/1.png" alt=""/></a></div>
+        <div class="col-sm-6 nav">
+        <ul class="ulul">
+         <a href="#"><li>首页</li></a>
+         <a href="#"><li>影片</li></a>
+         <a href="#"><li>信息</li></a>
+         <a href="#"><li>订单</li></a>
+       </ul>
+      </div>
+      <div class="col-sm-3 header_right">
+         <ul class="header_right_box">
+         <li><img src="images/1.png" alt=""/></li>
+         </ul>
+      </div>
+		<div class="content">
+                  <h1 class="recent">影片删除</h3>
+                   <ul id="flexiselDemo3">
+						<li><img src="images/1.jpg" class="img-responsive"/><div class="grid-flex"><a href="#">变形金刚</a><p class="delete">删除</p></div></li>
+						<li><img src="images/2.jpg" class="img-responsive"/><div class="grid-flex"><a href="#">跨国之恋</a><p class="delete">删除</p></div></li>
+						<li><img src="images/3.jpg" class="img-responsive"/><div class="grid-flex"><a href="#">机器人大战</a><p class="delete">删除</p></div></li>
+						<li><img src="images/4.jpg" class="img-responsive"/><div class="grid-flex"><a href="#">小黄人</a><p class="delete">删除</p></div></li>
+						<li><img src="images/5.jpg" class="img-responsive"/><div class="grid-flex"><a href="#">相濡以沫</a><p class="delete">删除</p></div></li>
+						<li><img src="images/42.jpg" class="img-responsive"/><div class="grid-flex"><a href="#">相濡以沫</a><p class="delete">删除</p></div></li>
+				    </ul>
+				    <script type="text/javascript">
+					 $(window).load(function() {
+						$("#flexiselDemo3").flexisel({
+							visibleItems: 4,
+							animationSpeed: 1000,
+							autoPlay: true,
+							autoPlaySpeed: 3000,    		
+							pauseOnHover: true,
+							enableResponsiveBreakpoints: true,
+					    	responsiveBreakpoints: { 
+					    		portrait: { 
+					    			changePoint:480,
+					    			visibleItems: 1
+					    		}, 
+					    		landscape: { 
+					    			changePoint:640,
+					    			visibleItems: 2
+					    		},
+					    		tablet: { 
+					    			changePoint:768,
+					    			visibleItems: 3
+					    		}
+					    	}
+					    });
+					    $(".delete").each(function(i, dom){
+						   (function(i,dom){
+						   		console.log(i);
+						   		$(".delete")[i].addEventListener("click",function(e){
+							      if(e.readystate == "complete")
+							      {
+							        return;
+							      }
+							      else
+							          deletes(e.target);
+							    });
+						   })(i,dom);						    
+						});
+						function deletes(trage){
+							console.log(trage);
+							trage.parentNode.parentNode.style.display="none";
+						}
+					    
+					});
+				   </script>
+				   <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+				   <ul id="flexiselDemo1">
+						<li><img src="images/41.jpg" class="img-responsive"/><div class="grid-flex"><a href="#">精灵传说</a><p class="delete">删除</p></div></li>
+						<li><img src="images/7.jpg" class="img-responsive"/><div class="grid-flex"><a href="#">自传</a><p id="delete">删除</p></div></li>
+						<li><img src="images/6.jpg" class="img-responsive"/><div class="grid-flex"><a href="#">爱在心头</a><p class="delete">删除</p></div></li>
+						<li><img src="images/1.jpg" class="img-responsive"/><div class="grid-flex"><a href="#">变形金刚</a><p class="delete">删除</p></div></li>
+						<li><img src="images/2.jpg" class="img-responsive"/><div class="grid-flex"><a href="#">恋情</a><p class="delete">删除</p></div></li>
+				     </ul>
+				    <script type="text/javascript">
+					 $(window).load(function() {
+						$("#flexiselDemo1").flexisel({
+							visibleItems: 4,
+							animationSpeed: 1000,
+							autoPlay: true,
+							autoPlaySpeed: 3000,    		
+							pauseOnHover: true,
+							enableResponsiveBreakpoints: true,
+					    	responsiveBreakpoints: { 
+					    		portrait: { 
+					    			changePoint:480,
+					    			visibleItems: 1
+					    		}, 
+					    		landscape: { 
+					    			changePoint:640,
+					    			visibleItems: 2
+					    		},
+					    		tablet: { 
+					    			changePoint:768,
+					    			visibleItems: 3
+					    		}
+					    	}
+					    });
+					    
+					});
+				   </script>
+		  </div>
+   	  </div>
+	</div>
+</div>
+</body>
+</html>

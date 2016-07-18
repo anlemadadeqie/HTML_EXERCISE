@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Movie_store A Entertainment Category Flat Bootstarp Resposive Website Template | Single :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Movie_store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- start plugins -->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<style type="text/css">
+@media screen and (min-width : 1280px){
+	.col-sm-3 img{
+		width: 100px;
+	}
+	.ulul a{
+		margin-top: 15px;
+		color: #333;
+		padding: 10px 20px;
+	}
+	.ulul a:hover{
+		color: red;
+	}
+
+.center{
+	padding: 150px 150px;
+	width: 450px;
+	position: relative;
+	top: 100px;
+	left: 80px;
+	height: 700px;
+	overflow: hidden;
+}
+.center div{
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	background-color: #F2F2F2;
+	text-align: center;
+	line-height: 150px;
+	float: left;
+	overflow: hidden;
+
+}
+
+#search{
+	position: absolute;
+	left: 150px;
+	top: 0px;
+	cursor: pointer;
+}
+#search:hover{
+	background-color: #AAAAAA;
+}
+#list_move{
+	position: absolute;
+	left: 0px;
+	cursor: pointer;
+}
+#list_move:hover{
+	background-color: #AAAAAA;
+}
+#tops{
+	position: absolute;
+	top: 300px;
+	left: 150px;
+	cursor: pointer;
+}
+#tops:hover{
+	background-color: #AAAAAA;
+}
+#down{
+	position: absolute;
+	right: 0px;
+	cursor: pointer;
+}
+#down:hover{
+	background-color: #AAAAAA;
+}
+}
+@media screen and (max-width : 1280px){
+.col-sm-3 img{
+		width: 100px;
+	}
+	.ulul a{
+		margin-top: 15px;
+		color: #333;
+		padding: 10px 20px;
+	}
+	.ulul a:hover{
+		color: red;
+	}
+
+.center{
+	padding: 150px 150px;
+	width: 450px;
+	position: relative;
+	top: 100px;
+	height: 700px;
+	overflow: hidden;
+}
+.center div{
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	background-color: #F2F2F2;
+	text-align: center;
+	line-height: 150px;
+	float: left;
+	overflow: hidden;
+
+}
+
+#search{
+	position: absolute;
+	left: 150px;
+	top: 0px;
+	cursor: pointer;
+}
+#search:hover{
+	background-color: #AAAAAA;
+}
+#list_move{
+	position: absolute;
+	left: 0px;
+	cursor: pointer;
+}
+#list_move:hover{
+	background-color: #AAAAAA;
+}
+#tops{
+	position: absolute;
+	top: 300px;
+	left: 150px;
+	cursor: pointer;
+}
+#tops:hover{
+	background-color: #AAAAAA;
+}
+#down{
+	position: absolute;
+	right: 0px;
+	cursor: pointer;
+}
+#down:hover{
+	background-color: #AAAAAA;
+}
+}
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="container_wrap">
+		<div class="header_top">
+		     <div class="col-sm-3 logo"><a href="index.html"><img src="images/1.png" alt=""/></a></div>
+        <div class="col-sm-6 nav">
+        <ul class="ulul">
+         <a href="index.html"><li>首页</li></a>
+         <a href="#tt"><li>影片</li></a>
+         <a href="single.html"><li>信息</li></a>
+         <a href="#"><li>订单</li></a>
+       	</ul>
+      	</div>
+      	<div class="col-sm-3 header_right">
+         <ul class="header_right_box">
+         <li><img src="images/1.png" alt=""/></li>
+         </ul>
+      	</div>	
+      	<div class="center">
+      		<div id="top"></div>
+      		<div id="down"><p>上架影片</p></div>
+      		<div id="search"><p>查看影片</p></div>
+      		<div id="list_move"><p>影片列表</p></div>
+      		<div id="tops"><p>下架影片</p></div>
+      	</div>
+      	<div class="clearfix"> </div>
+   	  </div>
+	</div>
+</div>
+<script type="text/javascript" src="jquery-2.2.2.min.js"></script>
+<script type="text/javascript">
+	$("#down").click(function(){
+
+		window.open('top.html');
+	});
+	$("#search").click(function(){
+		window.open('index.html');
+	});
+	$("#list_move").click(function(){
+		window.open('#tt');
+	});
+	$("#tops").click(function(){
+		window.open('delete.html');
+	});
+</script>
+</body>
+</html>
