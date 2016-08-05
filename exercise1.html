@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>横向三栏自适应屏幕布局</title>
+	<meta  http-equiv="Content-Type" content="text/html" charset="utf-8">
+
+	<style type="text/css">
+	html,body{
+		margin: 0;
+		height: 100%;
+	}
+
+	#main{
+		height: 100%;
+		margin:0 210px;
+		background: blue;
+	}
+
+	#left{
+		width:200px;
+		height: 100%;
+		background: green;
+		float:left;
+	}
+
+	#right{
+		width:200px;
+		height: 100%;
+		background: green;
+		float: right;
+	}
+
+	</style>
+</head>
+<body>
+	<div id="left">
+		<p><span>this is left</span></p>
+	</div>
+	<div id="right">
+		<p><span>this is right</span></p>		
+	</div>
+	<div id="main">
+		<p><span>this is center</span></p>
+	</div>
+
+</body>
+</html>
