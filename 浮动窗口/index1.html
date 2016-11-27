@@ -1,0 +1,71 @@
+<html>  
+  <head>  
+    <title>点击链接显示浮动窗口</title>  
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+  
+
+    <style type="text/css">
+
+#win{  
+    border:1px red solid;  
+    width : 300px;  
+    height: 200px;  
+    position : absolute;  
+    top : 100px;  
+    left: 350px;    
+    display : none;  
+}  
+ 
+#title{  
+    background-color : blue;  
+    color : red;   
+    padding-left: 3px;  
+}  
+
+#cotent{  
+    padding-left : 3px;  
+    padding-top :  5px;  
+}  
+
+#close{  
+    margin-left: 188px;  
+    cursor: pointer;  
+}  
+
+    </style> 
+
+  <script type="text/javascript">
+      function showWin(){  
+    /*找到div节点并返回*/  
+    var winNode = $("#win"); 
+    // var winNode = document.getElementById("win"); 
+   //方法一：利用js修改css的值，实现显示效果  
+   winNode.css("display", "block");  
+   //方法二：利用jquery的show方法，实现显示效果  
+   // winNode.show("slow");  
+    //方法三：利用jquery的fadeIn方法实现淡入  
+    // winNode.fadeIn("slow");  
+}  
+function hide(){  
+    var winNode = $("#win");  
+    //方法一：修改css的值  
+    //winNode.css("display", "none");  
+    //方法二：jquery的fadeOut方式  
+    winNode.fadeOut("slow");  
+    //方法三：jquery的hide方法  
+    winNode.hide("slow");  
+}  
+    </script>
+  </head>  
+  <body>
+      <a onclick="showWin();" href="#" mce_href="#">弹出窗口</a>  
+    <div id="win">  
+        <div id="title">我是标题栏！<span id="close" onclick="hide();">X</span></div>  
+        <div id="content">我是一个窗口！</div>  
+    </div>  
+  </body>    
+</html>  
+
